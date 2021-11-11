@@ -5,3 +5,5 @@
       register: rv
     - debug:
         msg: "{{rv.stdout}}"
+    - debug:
+        msg: "surveyvar: {{surveyvar}}"
