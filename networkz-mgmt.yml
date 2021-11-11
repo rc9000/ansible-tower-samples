@@ -2,3 +2,6 @@
   hosts: all
   tasks:
     - shell: uname -a
+      register: rv
+    - debug:
+        msg: rv.stdout
