@@ -1,10 +1,14 @@
 - name: Hello World Sample
   hosts: all
+  vars_prompt:
+    - name: var3
+      prompt: value of var3?
+      private: no
   tasks:
     - name: Hello Message
       debug:
         msg: "Hello AWX User {{lookup('env', 'HOME')}} on {{inventory_hostname}}"
-    - name: Output var1
+    - name: Output vars
       debug:
-        msg: "var1 = {{var1}}"
+        msg: "var1 = {{var1}} var3 = {{var3}}"
 
