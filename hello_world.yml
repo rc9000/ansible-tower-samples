@@ -3,5 +3,5 @@
   tasks:
     - name: Hello Message
       debug:
-        msg: "Hello AWX User {{lookup('env', 'USER')}} on {{inventory_hostname}}"
+        msg: "Hello AWX User {{lookup('env', 'HOME')}} on {{inventory_hostname}}"
 
