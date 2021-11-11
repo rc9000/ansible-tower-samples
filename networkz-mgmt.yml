@@ -4,4 +4,4 @@
     - shell: uname -a
       register: rv
     - debug:
-        msg: rv.stdout
+        msg: {{rv.stdout}}
