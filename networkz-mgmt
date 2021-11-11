@@ -1,4 +1,0 @@
-- name: networkz.ch remote management
-  hosts: all
-  tasks:
-    - shell: uname -a
