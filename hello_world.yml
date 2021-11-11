@@ -4,4 +4,7 @@
     - name: Hello Message
       debug:
         msg: "Hello AWX User {{lookup('env', 'HOME')}} on {{inventory_hostname}}"
+    - name: Output var1
+      debug:
+        msg: "var1 = {{var1}}"
 
