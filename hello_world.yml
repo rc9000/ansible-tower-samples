@@ -1,9 +1,10 @@
 - name: Hello World Sample
   hosts: all
-  vars_prompt:
-    - name: var3
-      prompt: value of var3?
-      private: no
+  # can't prompt in awx
+  #vars_prompt:
+  #  - name: var3
+  #    prompt: value of var3?
+  #    private: no
   tasks:
     - name: Hello Message
       debug:
